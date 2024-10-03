@@ -1,1 +1,29 @@
 GET http://localhost:5162/games
+
+###
+GET http://localhost:5162/games/4
+
+###
+POST http://localhost:5162/games
+Content-Type: application/json
+
+{
+    "name": "Minecraft",
+    "genre": "Kids and Family",
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+PUT http://localhost:5162/games/4
+Content-Type: application/json
+
+{
+    "name": "Street Fighter II Turbo",
+    "genre": "Fighting",
+    "price": 9.99,
+    "releaseDate": "1991-02-01"
+}
+
+###
+DELETE http://localhost:5162/games/3
